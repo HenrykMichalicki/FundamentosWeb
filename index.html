@@ -1,35 +1,21 @@
 <!--index - indica a página principal -->
 <!--ctrl + " - abre a aba do terminal do bash dentro do VSCode"-->
-<!-- git checkout -b + nome da branch - cria uma nova branch e entra dentro da mesma para subir os arquivos -->
-<!-- ctrl + espaço - comando para auto completar tags -->
-<!-- HTML é uma linguagem de marcação -->
+<!-- git checkout -b html - cria a branch html e entra dentro da mesma para subir os arquivos -->
+<!-- link - traz a referência da parte de style css para estilizaçõa da página.  -->
+<!-- SHIFT + ALT + F - para alinhar o código -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
-    <!-- lang - por padrão vem em EN, porém alterar para pt-br-->
-<head>
-    <!-- head - faz com que o conteúdo seja reconhecido pelo navegado antes de todo o conteúdo do site ser carregado -->
-    <meta charset="UTF-8">
-    <!-- chasert - determina o padrão do teclado/biblioteca a ser utilizado -->
+  <head>
+    <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- viewport - determina o tamanho que o site irá se adaptar ao entrar no site por algum dispositivo -->
-    <!-- device - o diswpositivo que é utilizado para acessar o site construído -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Perfil</title>
-    <!-- inserir o link para vincular o arquivo css a página HTML -->
-   <link rel="stylesheet" href="Assets/CSS/style.css">
-    
- 
-
-    <!-- Inserir a tag Style para estilizar o html através do css -->
-    <!-- para chamar o id criado, colocar #p.... -->
-    <!-- para chamar a class, começar com . -->
-    <!-- text-align - alinamento de texto -->
-   
-</head>
-<body>
-    <!-- body - tudo o que aparece para o usuário -->
-    <!-- ul(unorder list) - lista de forma desordenada, com os pontos antes de cada item -->
-    <!-- li(item list) - itens da lista -->
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+  </head>
+  <body>
+    <!-- ul - lista de forma desordesana -->
+    <!-- li - itens da lista -->
     <!-- a - tag de link, determina que será feito uma palavra clicável -->
     <!-- href - onde será mandado através desse link -->
     <!-- target="_blank" - determina que se abra uma nova página ao clicar no link -->
@@ -37,46 +23,46 @@
     <!-- ol - lista ordenada (1,2,3...)-->
 
     <ul id="menu">
-        <li>
-            <a href="index.html"  >Home </a>    
-        </li>
-        <li>
-            <a href="contato.html"  >Contato </a>    
-        </li>
+      <li>
+        <a href="index.html">Home </a>
+      </li>
+      <li>
+        <a href="contato.html">Contato </a>
+      </li>
     </ul>
-
-    <h1 class="center" >Sobre o Henryk</h1>  <!--h1 - texto principal do site. h2, h3, h4, h5, h6, são títulos/subtítulos menores-->
-    <!-- criar dentro da div a marcação CONTAINER, que deixa formatar a página em flexbox -->
-<div class="container">
-    <div class="p-30">
-        <!-- para alterar via css um local específico, determinar um id e assim fazer a alteração só no local, um único elemento -->
-        <!-- class - cria-se um class para que dentro desse item, possamos alterar de forma isolada, porém pode ser usada para diversos elementos. É útil para reproduzir estilização ao longo da página -->
-        <p class= "justify">
-            <!-- lorem + enter - cria textos aleatórios para que se possa estabelecer a parte de texto do site -->
-             <!-- p - parágrafo de texto dentro de um determinado local no site-->
-            <!-- class - pode ser utilizada para vários elementos e copiar a estilização -->
-            <!-- id - trata o item de forma individual, alterações num único item -->
-            Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti palavris qui num significa nadis i pareci latim.
-            Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti palavris qui num significa nadis i pareci latim.
+    <!--h1 - texto principal do site. h2, h3, h4, h5, h6, são títulos/subtítulos menores-->
+    <h1 class="center">Sobre o Henryk</h1>
+    <!-- container - faz com que se crie uma caixa dentro do site para distribuição dos itens -->
+    <div class="container">
+      <div class="p-30">
+        <!-- p - parágrafo de texto dentro de um determinado local no site-->
+        <p class="center">
+          Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia
+          nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est.
+          Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti
+          palavris qui num significa nadis i pareci latim.
         </p>
-
-        <p class= "justify">
-            Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti palavris qui num significa nadis i pareci latim.
-            Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti palavris qui num significa nadis i pareci latim.
+        <p class="center">
+          Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia
+          nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est.
+          Leite de capivaris, leite de mula manquis sem cabeça. Sapien in monti
+          palavris qui num significa nadis i pareci latim.
         </p>
-    </div>
-    <div>
-        <img class="br-50 wh-300 p-30"  src="Assets/IMG/Foto Henryk.jpg" alt="Minha foto" height="450px" width="450px"> 
-        <!-- tag img - para inserção de imagem no site -->
+      </div>
+      <div>
+        <img
+          class="br-50 wh-400 p-30"
+          src="Assets/IMG/Henryk Michalicki Junior.jpg"
+          alt="Minha foto"
+        />
         <!--src - o link da imagem a ser inserida, alt - o texto descritivo da imagem. *Essa tag é traduzida para deficientes visuais -->
-        <!-- alt - texto que aparece junto a imagem/ serve para a parte de autodescrição -->
+      </div>
     </div>
-</div>
 
-    <h2 class="center">Meu vídeo predileto</h2>
+    <h2 class="center">Se liga nessa dupla:</h2>
     <!-- iframe - pedaço de um site dentro do site que vai ser criado -->
-    <!-- width - indica a largura do vídeo -->
-    <!-- height - indica a altura do vídeo -->
+    <!-- width - indica a altura do vídeo -->
+    <!-- height - indica a largura do vídeo -->
     <!-- src - indica o link de onde vem o vídeo -->
     <!-- frameborder - indica o tamanho da borda no frame -->
     <!-- allow - permissões que pode ser feitas no vídeo -->
@@ -87,42 +73,17 @@
     <!--  gyroscope -  -->
     <!-- picture-in-picture - opção de reproduzir a janela do vídeo em segundo plano, sem ter que ficar com a página ativa aberta-->
     <!-- allowfullscreen - permite a reprodução em tela cheia-->
-
-    <div class="container mb-50">
-        <iframe 
-    width="560" 
-    height="315"
-    src="https://www.youtube.com/embed/p7jOzYTYUHE"
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
+    <div class="container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/p7jOzYTYUHE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
     </div>
-    <!-- hr - cria uma linha entre o site e o rodapé, separando uma sessão da outra -->
-    <hr>
-    <footer>
-
-        <div id="logo" class="container">
-            <!-- a - torna o item clicável -->
-            <a href="https://www.linkedin.com/in/henrykmichalicki/" target="_blank">
-                <img src="./Assets/IMG/logotipo-do-linkedin.png" alt="Logo do linkedin">
-            </a>
-            <a href="https://github.com/HenrykMichalicki" target="_blank">
-                <img  src="./Assets/IMG/github.png" alt="logo do github">
-            </a>
-            <a href="https://www.instagram.com/rendrikks/" target="_blank">
-                <img src="./Assets/IMG/instagram.png" alt="Logo do instagram">
-            </a>
-        </div>
-
-        <p class="center">
-            Todos os direitos reservados: Henryk Michalicki &copy
-        </p>
-    
-
-    </footer>
-    
-
-</body>
+  </body>
 </html>
